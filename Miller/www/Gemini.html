@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>GEMINI</title>
+ <style>
+.textbox{
+	font-family: Helvetica;
+	border-color: violet;
+	}
+.greet{
+    font-size: 30px;
+    color:black; 
+     text-shadow:
+   -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff; 
+     font-family: Impact;
+     text-align: center;
+}
+.button{
+    background-color: #1a75ff; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 12px 30px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.g{
+     font-size: 15px;
+     padding: 50px 50px 50px;
+     color:white;
+    font-family: helvetica;
+    text-align: justify;
+    text-justify: inter-word;
+}
+	</style>
+    </head>
+    <body background="img\bg1.jpg">
+	    <div class="greet">
+    <p><span id="hey"></span></p>
+    </div>
+<form id='form1'>
+	 <center class="g"><p><b>Gemini:<br>Bumangon ka ng maaga ngayong Thursday. Kailangan mong maunahan ng pagsikat ng araw. Kailangan mong ipaaraw ang iyong likuran. Alam mo kung Baki? Wala lang naisip ko lang HHAHAH. Corny ko 😂😁
+ <br><br><br>Love:  Sensya na wala kang ganun e. Tulog ka nalang 💔siguro 😢<br><br><br>
+Money: Marami kang matatanggap na pera ngayong taon. Kaya bilihin mo mga gusto mo. You fvckin deserve it!! Yeah!! SAYASAYA.  <br><br><br>
+LUCKY COLOR:  Black, Indigo, Maroon</b> </p></center>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;
+	   <center><textarea class="textbox" id="comments" placeholder="Your comments here..." rows="5" style="font-size: 15px; height: 200px; width: 340px;"></textarea></center>
+    <br><br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;<input type="button" id="submit" class="button" value="SUBMIT"    style="font-size: 20px;" onclick='jm();'>
+	</form>
+    <script type="text/javascript">
+    	localStorage.getItem('name');
+    document.getElementById('hey').innerHTML="Hello " +localStorage.getItem('name')+ "! Your Zodiac Sign is Gemini.";
+	
+		function jm(){
+		var r = document.forms["form1"]["comments"].value;
+		localStorage.setItem("comments",r);
+}
+</script>
+    </body>
+</html>

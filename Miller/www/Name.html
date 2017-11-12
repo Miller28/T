@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>Funny Horoscope</title>
+        <style>
+.text1{
+    font-size: 20px;
+    width: 270px;
+    height: 30px;
+    text-align: center;
+    border-color: aqua;
+    border:2px solid #456879;
+    border-radius:40px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: aqua;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  height: 70px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 45px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+    </head>
+    <body background="img\bg1.jpg">
+        <br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <form id='form1'>
+        <center><input type="text" id="txt" class='text1' placeholder="Your Name Here"></center>
+        <br>
+
+        <center><input type="button" class='button' value='OKAY' onclick="getName();"/></center>
+    </form>
+    <script>
+function getName(){
+    var x = document.forms["form1"]["txt"].value;
+
+    if (x==""){
+        alert("Please Enter Your Name!");
+        return false;
+    }
+    else
+    {
+        localStorage.setItem("name",x);
+        document.forms["form1"]["txt"].value="";
+        location.href='Zodiac.html';
+    }
+}
+    </script>
+    </body>
+</html>

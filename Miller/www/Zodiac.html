@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>Zodiac Signs</title>
+<style>
+.greet{
+  font-size: 24px;
+  color:black; 
+   text-shadow:
+   -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff; 
+     font-family: Impact;
+     text-align: center;
+}
+
+</style>
+
+    </head>
+    <body background="img\bg1.jpg">
+     <div class="greet">
+    <p><span id="hey"></span></p>
+    </div>
+  	<center><a href = "Aquarius.html"><img src="img/aquarius.jpg" height="28" width="280"></a></center><br>
+  	<center><a href = "Pisces.html"><img src="img/pisces.jpg" height="28" width="280"></a></center><br>
+  	<center><a href = "Aries.html"><img src="img/aries.jpg" height="28" width="280"></a></center><br>
+  	<center><a href = "Taurus.html"><img src="img/taurus.jpg" height="28" width="280"></a></center><br>
+  	<center><a href = "Gemini.html"><img src="img/gemini.jpg" height="28" width="280"></a></center><br>
+  	<center><a href = "Cancer.html"><img src="img/cancer.jpg" height="28" width="280"></a></center><br>
+  	<center><a href = "Leo.html"><img src="img/leo.jpg" height="28" width="280"></a></center><br>
+  	<center><a href = "Virgo.html"><img src="img/virgo.jpg" height="28" width="280"></a></center><br>
+  	<center><a href = "Libra.html"><img src="img/libra.jpg" height="28" width="280"></a></center><br>
+  	<center><a href = "Scorpio.html"><img src="img/scorpio.jpg" height="28" width="280"></a></center><br>
+  	<center><a href = "Sagittarius.html"><img src="img/sagittarius.jpg" height="28" width="280"></a></center><br>
+  	<center><a href = "Capricorn.html"><img src="img/capricorn.jpg" height="28" width="280"></a></center><br>
+    </body>
+        <script type="text/javascript">
+      localStorage.getItem('name');
+    document.getElementById('hey').innerHTML="Choose Your Sign " +localStorage.getItem('name')+ ".<br> According to Your Birth Date." ;
+    </script>
+</html>
